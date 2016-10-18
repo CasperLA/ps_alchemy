@@ -47,6 +47,9 @@ setup(
     description='SQLAlchemy provider for pyramid_sacrud.',
     long_description=read('README.rst'),
     install_requires=read('requirements.txt'),
+    dependency_links=[
+        "git+https://github.com/CasperLA/sacrud_deform.git#egg=sacrud_deform"
+    ],
     tests_require=read('requirements.txt') + read('requirements-test.txt'),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
