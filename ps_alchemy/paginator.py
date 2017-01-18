@@ -26,7 +26,7 @@ def get_current_page(request):
     return int(request.params.get('page', 1))
 
 
-def get_paginator(request, items_per_page=10):
+def get_paginator(request, items_per_page=50):
     return {
         "items_per_page": items_per_page,
         "page": get_current_page(request),
